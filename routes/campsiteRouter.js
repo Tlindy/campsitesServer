@@ -82,7 +82,7 @@ campsiteRouter
             .catch(err => next(err));
     });
 
-// Route for all comments on a campsite- /campsites/:/campsiteId/comments
+// Route for all comments on a campsite- /campsites/:campsiteId/comments
 campsiteRouter
     .route("/:campsiteId/comments")
     .get((req, res, next) => {
